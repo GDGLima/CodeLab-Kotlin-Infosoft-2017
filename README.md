@@ -1,2 +1,2 @@
-# CodeLab-Kotlin-Infosoft-2017
+# CodeLab Kotlin
 CodeLab Kotlin - Infosoft 2017
