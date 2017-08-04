@@ -6,7 +6,7 @@
 
 Este codelab está enfocado al desarrollo de aplicaciones Android usando Kotlin. Iniciaremos con una introducción a este lenguaje , sus características, ventajas, interoperabilidad y diferencias con java. Luego, usaremos Android Studio para implementar  un ejemplo práctico de una aplicación Android desarrollada con Kotlin.
 
-## <img src="./01.png" height="20" width="20" > Bienvenido
+## <img src="./01.png" height="40" width="40" > Bienvenido
 
 ## <img src="./01.png" height="20" width="20" >  Instala Android Studio
 
