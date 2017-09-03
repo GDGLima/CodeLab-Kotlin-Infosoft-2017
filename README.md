@@ -14,7 +14,7 @@ Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para
 
  * IDE , vamos a usar Android Studio versión 2.3.3
 
- * Kotlin Plugin , vamos a usar un plugin para poder construir proyecto en Kotlin en  Android Studio. La versión que usaremos es v1.1.4-Release-studio2.3-3
+ * Kotlin Plugin , vamos a usar un plugin para poder construir un proyecto en Kotlin en  Android Studio. La versión que usaremos será v1.1.4-Release-studio2.3-3
 
  * Descargar los files del CodeLab , para esto seleccionas CLONE OR DOWNLOAD /DOWNLOAD ZIP o desde el siguiente link
  ```
@@ -30,7 +30,7 @@ Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para
   * Los archivos "README.md" y "TipsAndTricks.md"
 
 
- * Proyecto Template , en los archivos de este codelab se encuentra un  proyecto base  llamado "KotlinTemplate" . Para poder abrirlo, desde Android Studio seleccionas FILE / OPEN / KotlinTemplate . Al abrirlo la primera vez te va pedir descargar dependencias , para esto debes estar conectado a internet.
+ * Proyecto Template , en los archivos de este codelab se encuentra un  proyecto base  llamado "KotlinTemplate" . Para poder abrirlo desde Android Studio seleccionas FILE / OPEN / KotlinTemplate . Al abrirlo la primera vez te va pedir descargar dependencias , para esto debes estar conectado a internet.
 
  <img src="./images/template-project.png" height="360">
 
@@ -43,11 +43,12 @@ Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para
 
 ### [1.2] Aprende sobre Kotlin
 
-  * Kotlin es bastante amplio y nos trae consigo conceptos buenos, por lo que sería genial que vayas leyendo un poco sobre este lenguaje de programación. Para esto te recomiendo visitar la pagina oficial, donde encontrarás todo lo que necesitas y más, de hecho tiene muy buena documentación.
+  * Kotlin es bastante amplio y trae consigo conceptos nuevos, por lo que sería genial que vayas leyendo un poco sobre este lenguaje de programación. Para esto te recomiendo visitar la pagina oficial, donde encontrarás todo lo que necesitas y más, de hecho tiene muy buena documentación.
 
   ```
      https://kotlinlang.org/docs/reference/
   ```
+  * Aprendamos sobre este lenguaje de programación, hagamos un review de Kotlin [ReviewKotlin](./ReviewKotlin.md)
 
 ## [2] Instala Android Studio
 
