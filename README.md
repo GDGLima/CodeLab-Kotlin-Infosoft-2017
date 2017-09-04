@@ -159,6 +159,20 @@ Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para
 
 ## [4] Infosoft App
 
+* Vamos a construir una pequeña aplicación en Kotlin para el evento de Infosoft , donde mostraremos las siguientes secciones
+
+  * Inicio
+
+  * Expositores
+
+  * Agenda
+
+  * Sponsors
+
+* La data se obtendrá  desde la web del evento [http://convencion.pucp.edu.pe/infosoft/](http://convencion.pucp.edu.pe/infosoft/) para lo cual hice un webscraping
+
+<img src="./images/app-splash.png" height="480"><img src="./images/app-speakers.png" height="480"> <img src="./images/app-schedule.png" height="480"> <img src="./images/app-sponsors.png" height="480">
+
 ## [5] Construye las vistas y la UI de tu App
 
 ## [6] Agrega interactividad  a tu app mediante eventos
@@ -166,6 +180,27 @@ Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para
 ## [7] Maneja Listas y Adaptaders usando RecyclerView
 
 ## [8] Carga datos dinámicamente y aprende sobre persistencia de datos.
+
+  * Vamos a consumir servicios Restful para cada sección de la app , para esto vamos a usar Retrofit2 [http://square.github.io/retrofit/](http://square.github.io/retrofit/) . Esta librería esta hecha en Java , lo cual no es un problema , ya que Kotlin  es interoperable con Java, asi que puedes seguir usando las librerias que haz trabajado anteriormente sin problemas.
+
+  * Route & Endpoints
+
+    * Route
+      ```
+        https://blooming-oasis-63723.herokuapp.com/
+      ```
+
+    * Endpoints
+
+Acción | Tipo  | URL
+------------ | ------------- | -------------      
+    Listar Expositores  | GET | /speakers
+    Listar Sponsors  | GET | /sponsors
+    Agenda - Talleres  | GET | /workshops
+    Agenda - Actividades  | GET | /events
+    Agenda - Actividades por fecha | POST | /events
+
+  * Pueden usar una herramienta como POSTMAN para probar los servicios [link](https://www.getpostman.com/)
 
 ## [9] Referencias
 
