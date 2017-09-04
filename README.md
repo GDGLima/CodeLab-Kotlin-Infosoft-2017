@@ -269,6 +269,53 @@ class SpeakersFragmentK : Fragment {
 
 ## [7] Maneja Listas y Adaptaders usando RecyclerView
 
+  * Crear un adapter en Kotlin
+
+  ```java
+    class EventAdapterK(val events:List<EntityK.EventK>, val context: Context): RecyclerView.Adapter<EventAdapterK.ViewHolder>() {
+
+      class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+          val textViewName: TextView = view.textViewName
+          val textViewDesc: TextView = view.textViewDesc
+          val imageView: ImageView = view.imageView
+      }
+
+      override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+          val layoutInflater = LayoutInflater.from(parent.context)
+          return ViewHolder(layoutInflater.inflate(R.layout.row_event, parent, false))
+      }
+
+      override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+          val time: String = events[position].time!!
+          val activity: String? = events[position].activity
+
+          holder.textViewName.text = time
+          holder.textViewDesc.text = activity
+      }
+
+      override fun getItemCount(): Int {
+          return events.size
+      }
+  }
+  ```
+
+  * RecyclerView
+
+  ```java
+      private fun ui(){
+         val mLayoutManager: RecyclerView.LayoutManager = LinearLayoutManager(activity!!)
+         recyclerViewSpeakers.layoutManager= mLayoutManager
+     }
+
+     private fun renderSpeakers(speakers:List<EntityK.SpeakerK>){
+       if(activity!=null){
+           speakerAdapter= SpeakerAdapterK(speakers,activity)
+           recyclerViewSpeakers.setAdapter(speakerAdapter)
+       }
+    }
+
+  ```
+
 ## [8] Carga datos dinámicamente y aprende sobre persistencia de datos.
 
   * Vamos a consumir servicios Restful para cada de las secciones de la app , para esto usaremos  Retrofit2 [http://square.github.io/retrofit/](http://square.github.io/retrofit/) . Esta librería esta hecha en Java , lo cual no es un problema , ya que Kotlin  es interoperable con Java, asi que puedes seguir usando las librerias que hayas trabajado anteriormente sin problemas.
@@ -351,7 +398,7 @@ Agenda - Actividades por fecha | POST | /events
       }
   }
   ```
-  
+
   * Realicemos una llamada a un servicio
 
   ```java
