@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Infosoft2017</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- menu -->
+    <string name="home">Inicio</string>
+    <string name="speakers">Expositores</string>
+    <string name="schedule">Agenda</string>
+    <string name="sponsors">Sponsors</string>
+
+    <string name="talleres">Talleres</string>
+    <string name="programa">Programa</string>
+
+    <!-- template -->
+    <string name="tmp_bio">Ingeniero Informático PUCP, Consultor Oracle en TS NET EVOL. Trabajó 1 año como Asistente de Tráfico Anómalo en Americatel Perú. Finalista del Torneo Universitario de Apps 2015 en Valparaíso, Chile y 2016 en Aguascalientes, México. Estudiante del diplomado en Business Coaching en CENTRUM Católica. CEO de Crea Tech. </string>
 </resources>

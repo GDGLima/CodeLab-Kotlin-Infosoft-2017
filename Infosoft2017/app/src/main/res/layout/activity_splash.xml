@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context="com.emedinaa.infosoft2017.SplashActivity">
+    tools:context="com.emedinaa.infosoft2017.SplashActivityK">
 
     <android.support.v7.widget.AppCompatImageView
         android:layout_width="0dp"

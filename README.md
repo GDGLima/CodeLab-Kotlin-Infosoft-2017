@@ -39,7 +39,7 @@ Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para
   ```
       Run / Run App
   ```
-  <img src="./images/kotlin-template-app.png" height="360"> <img src="./images/kotlin-template-app1.png" height="360"> </br> <img src="./images/kotlin-template-app2.png" height="360">
+  <img src="./images/kotlin-template-app.png" height="360"> <img src="./images/kotlin-template-app1.png" height="360"> <img src="./images/kotlin-template-app2.png" height="360">
 
 ### [1.2] Aprende sobre Kotlin
 
@@ -171,3 +171,6 @@ Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para
 
   * Google CodeLabs Kotlin https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin/
   * Android Studio https://developer.android.com/studio/index.html
+
+  * Realm - Getting started with Kotlin and Anko on Android
+  https://academy.realm.io/posts/getting-started-with-kotlin-and-anko/

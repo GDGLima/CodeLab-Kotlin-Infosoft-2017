@@ -20,7 +20,9 @@
 
 * Tutoriales [https://kotlinlang.org/docs/tutorials/](https://kotlinlang.org/docs/tutorials/)
 
-* Ejemplos en github sobre Kotlin de Jebrains [https://github.com/JetBrains/kotlin](https://github.com/JetBrains/kotlin)
+* Kotlin Workshop - JetBrains [https://github.com/JetBrains/kotlin-workshop](https://github.com/JetBrains/kotlin-workshop)
+
+* Ejemplos en github sobre Kotlin de JetBrains [https://github.com/JetBrains/kotlin-examples](https://github.com/JetBrains/kotlin-examples)
 
 * Google CodeLabs (Kotlin) [https://codelabs.developers.google.com/](https://codelabs.developers.google.com/)
 

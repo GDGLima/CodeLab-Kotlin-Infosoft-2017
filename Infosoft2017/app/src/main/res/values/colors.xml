@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#006cbc</color>
+    <color name="colorPrimaryDark">#0062ab</color>
+    <color name="colorAccent">@color/yellowInfosoft</color>
+
+    <color name="yellowInfosoft">#ffcb00</color>
+    <color name="blueInfosoft">#006cbc</color>
+    <color name="redInfosoft">#ff0000</color>
+    <color name="greenInfosoft">#7ea534</color>
+    <color name="blue2Infosoft">#3d647e</color>
+    <color name="greyInfosoft">#EEEEEE</color>
 </resources>
