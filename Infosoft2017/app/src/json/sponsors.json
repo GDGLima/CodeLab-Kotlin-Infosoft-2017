@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Organizadores",
+      "image": "",
+      "type": "HEADER"
+    },
+    {
+      "title": "Pontificia Universidad Católica del Perú",
+      "image": "http://convencion.pucp.edu.pe/infosoft/wp-content/uploads/sites/10/2017/03/logo-pucp-aniversario-color-160x53.png",
+      "type": "SPONSOR"
+    },
+    {
+      "title": "Asociación de Alumnos de Ingeniería Informática 2017",
+      "image": "http://convencion.pucp.edu.pe/infosoft/wp-content/uploads/sites/10/2017/07/Webp.net-resizeimage-142x80.png",
+      "type": "SPONSOR"
+    },
+    {
+      "title": "Auspiciadores",
+      "image": "",
+      "type": "HEADER"
+    },
+    {
+      "title": "CREATECH",
+      "image": "http://convencion.pucp.edu.pe/infosoft/wp-content/uploads/sites/10/2013/06/CREATECH_SinFondo-1-160x46.png",
+      "type": "SPONSOR"
+    },
+    {
+      "title": "BELATRIX",
+      "image": "http://convencion.pucp.edu.pe/infosoft/wp-content/uploads/sites/10/2013/06/Logo-belatrix-01-1-2-160x33.png",
+      "type": "SPONSOR"
+    },
+    {
+      "title": "EVERIS",
+      "image": "http://convencion.pucp.edu.pe/infosoft/wp-content/uploads/sites/10/2013/06/everisnttdata_logoRGB_para-web-01-1-152x80.png",
+      "type": "SPONSOR"
+    },
+    {
+      "title": "BIT2BIT",
+      "image": "http://convencion.pucp.edu.pe/infosoft/wp-content/uploads/sites/10/2017/07/bit2bit-Americas-logo@2x-160x65.png",
+      "type": "SPONSOR"
+    },
+    {
+      "title": "ORACLE",
+      "image": "http://convencion.pucp.edu.pe/infosoft/wp-content/uploads/sites/10/2017/08/oracle-loguito-160x29.png",
+      "type": "SPONSOR"
+    },
+    {
+      "title": "SECURITY LABS",
+      "image": "http://convencion.pucp.edu.pe/infosoft/wp-content/uploads/sites/10/2017/08/securitylabs-logo-wide-color-160x39.png",
+      "type": "SPONSOR"
+    },
+    {
+      "title": "Colaboradores",
+      "image": "",
+      "type": "HEADER"
+    },
+    {
+      "title": "E-QUIPU Red de Emprendedores",
+      "image": "http://convencion.pucp.edu.pe/infosoft/wp-content/uploads/sites/10/2013/06/LOGO-EQUIPU-ORIGINAL-2-1-155x80.png",
+      "type": "SPONSOR"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ import com.emedinaa.infosoft2017.BuildConfig
 /**
  * Created by emedinaa on 2/09/17.
  */
-open class BaseActivity: AppCompatActivity() {
+open class BaseActivityK : AppCompatActivity() {
 
     fun log(lambda: () -> String) {
         if (BuildConfig.DEBUG) {
