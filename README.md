@@ -171,7 +171,11 @@ Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para
 
 * La data se obtendrá  desde la web del evento [http://convencion.pucp.edu.pe/infosoft/](http://convencion.pucp.edu.pe/infosoft/) para lo cual hice un webscraping
 
-<img src="./images/app-splash.png" height="480"><img src="./images/app-speakers.png" height="480"> <img src="./images/app-schedule.png" height="480"> <img src="./images/app-sponsors.png" height="480">
+<img src="./images/app-splash.png" height="480"> <img src="./images/app-home.png" height="480">  <img src="./images/app-speakers1.png" height="480">
+
+<img src="./images/app-schedule.png" height="480"> <img src="./images/app-activities.png" height="480"> <img src="./images/app-workshops.png" height="480">
+
+<img src="./images/app-sponsors.png" height="480">
 
 ## [5] Construye las vistas y la UI de tu App
 

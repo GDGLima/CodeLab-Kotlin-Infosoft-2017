@@ -12,6 +12,7 @@ import com.emedinaa.infosoft2017.data.storage.ApliClientK
 import com.emedinaa.infosoft2017.model.EntityK
 import com.emedinaa.infosoft2017.ui.adapterskt.SponsorAdapterK
 import kotlinx.android.synthetic.main.fragment_sponsors.*
+import kotlinx.android.synthetic.main.layout_progress.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -73,11 +74,13 @@ class SponsorsFragmentK : BaseFragmentK<SponsorResponseK>() {
     }
 
     private fun requestSponsors(){
+        showLoading()
         //ApliClientK.getMyApiClient().sponsors()
         //val call: Call<SponsorResponseK> = ApliClientK.getMyApiClient().sponsors()
         currentCall= ApliClientK.getMyApiClient().sponsors()
         currentCall!!.enqueue(callback)
     }
+
 
 
     private fun renderSponsors(sponsors:List<EntityK.SponsorK>){
@@ -99,18 +102,24 @@ class SponsorsFragmentK : BaseFragmentK<SponsorResponseK>() {
     //endpoints
     private val callback: Callback<SponsorResponseK> = object: Callback<SponsorResponseK> {
         override fun onResponse(call: Call<SponsorResponseK>?, response: Response<SponsorResponseK>?) {
-            println("onResponse $response.body()")
-
             log({"onResponse $response.body()"})
+            hideLoading()
             //renderSpeakers(response!!.body().data)
             renderSponsors(response!!.body().data)
         }
 
         override fun onFailure(call: Call<SponsorResponseK>?, t: Throwable?) {
-
-            println("onFailure $t")
+            hideLoading()
             log({"onFailure $t"})
         }
+    }
+
+    override fun showLoading() {
+        relativeLayoutProgress.visibility= View.VISIBLE
+    }
+
+    override fun hideLoading() {
+        relativeLayoutProgress.visibility= View.GONE
     }
 }
 

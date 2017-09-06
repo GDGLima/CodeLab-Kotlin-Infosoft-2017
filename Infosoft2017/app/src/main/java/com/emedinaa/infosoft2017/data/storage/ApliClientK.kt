@@ -10,7 +10,9 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.*
+import retrofit2.http.GET
+import retrofit2.http.Headers
+import retrofit2.http.Query
 import java.io.File
 import java.util.*
 
@@ -24,7 +26,13 @@ import java.util.*
  *
  * Caching
  * https://futurestud.io/tutorials/retrofit-2-activate-response-caching-etag-last-modified
+ *
+ * https://blooming-oasis-63723.herokuapp.com/pucp/talleres?date=2017/09/04
+ * https://blooming-oasis-63723.herokuapp.com/pucp/ponencias?date=2017/09/04
+ * https://blooming-oasis-63723.herokuapp.com/speakers
+ * https://blooming-oasis-63723.herokuapp.com/sponsors
  */
+
 class ApliClientK {
     companion object {
         private var servicesApiInterface: ServicesApiInterface? = null
@@ -72,13 +80,19 @@ class ApliClientK {
         @GET("/sponsors")
         fun sponsors():Call<SponsorResponseK>
 
+        //http://localhost:5000/pucp/talleres
         @Headers("Content-Type: application/json")
-        @GET("/workshops")
+        @GET("/pucp/talleres")
         fun workshops():Call<EventResponseK>
 
-        @FormUrlEncoded
+        //http://localhost:5000/pucp/talleres/fecha?date=2017/09/06
         @Headers("Content-Type: application/json")
-        @POST("/events")
-        fun events(@Field("date") mDate:String):Call<EventResponseK>
+        @GET("/pucp/talleres/fecha")
+        fun workshopsByDate(@Query("date") mDate:String):Call<EventResponseK>
+
+        //http://localhost:5000/pucp/ponencias?date=2017/09/06
+        @Headers("Content-Type: application/json")
+        @GET("/pucp/ponencias")
+        fun events(@Query("date") mDate:String):Call<EventResponseK>
     }
 }
