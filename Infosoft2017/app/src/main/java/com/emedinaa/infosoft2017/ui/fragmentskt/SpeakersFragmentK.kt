@@ -12,6 +12,7 @@ import com.emedinaa.infosoft2017.data.model.SpeakerResponseK
 import com.emedinaa.infosoft2017.data.storage.ApliClientK
 import com.emedinaa.infosoft2017.model.EntityK
 import kotlinx.android.synthetic.main.fragment_speakers.*
+import kotlinx.android.synthetic.main.layout_progress.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -57,8 +58,8 @@ class SpeakersFragmentK : BaseFragmentK<SpeakerResponseK>() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        ui();
-        requestSpeakers();
+        ui()
+        requestSpeakers()
     }
 
     private fun ui(){
@@ -74,6 +75,7 @@ class SpeakersFragmentK : BaseFragmentK<SpeakerResponseK>() {
     }
 
     private fun requestSpeakers(){
+        showLoading()
         ApliClientK.getMyApiClient().speakers()
         //val call: Call<SpeakerResponseK> = ApliClientK.getMyApiClient().speakers()
         currentCall = ApliClientK.getMyApiClient().speakers()
@@ -83,17 +85,26 @@ class SpeakersFragmentK : BaseFragmentK<SpeakerResponseK>() {
     //endpoints
     private val callback: Callback<SpeakerResponseK> = object: Callback<SpeakerResponseK> {
         override fun onResponse(call: Call<SpeakerResponseK>?, response: Response<SpeakerResponseK>?) {
-            println("onResponse $response.body()")
+            hideLoading()
 
             log({"onResponse $response.body()"})
             renderSpeakers(response!!.body().data)
         }
 
         override fun onFailure(call: Call<SpeakerResponseK>?, t: Throwable?) {
-
-            println("onFailure $t")
+            hideLoading()
 
             log({"onFailure $t"})
         }
     }
+
+    override fun showLoading() {
+       relativeLayoutProgress.visibility=View.VISIBLE
+    }
+
+    override fun hideLoading() {
+        relativeLayoutProgress.visibility=View.GONE
+    }
+
+
 }

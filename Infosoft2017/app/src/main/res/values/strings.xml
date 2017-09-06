@@ -13,6 +13,9 @@
     <string name="talleres">Talleres</string>
     <string name="programa">Programa</string>
 
+    <!-- home -->
+    <string name="txtHome">INFOSOFT se dio lugar por primera 17 años atrás, como una iniciativa estudiantil organizada por la especialidad de Ingeniería Informática de la PUCP bajo las siglas .NET que representaban la frase “Nuestra Exposición de Trabajos” con el propósito de presentar al círculo universitario y público interesado, los proyectos más destacados, que los estudiantes estaban desarrollando.\n\nEn esta edición 2017, año del centenario de la PUCP, se está trabajando para volver a ofrecer un evento de calidad. En esta ocasión, además de su espíritu original de compartir conocimiento, se busca hacer que este y los proyectos derivados, sean de alto impacto e interés para solucionar problemas de nuestra sociedad.</string>
+
     <!-- template -->
     <string name="tmp_bio">Ingeniero Informático PUCP, Consultor Oracle en TS NET EVOL. Trabajó 1 año como Asistente de Tráfico Anómalo en Americatel Perú. Finalista del Torneo Universitario de Apps 2015 en Valparaíso, Chile y 2016 en Aguascalientes, México. Estudiante del diplomado en Business Coaching en CENTRUM Católica. CEO de Crea Tech. </string>
 </resources>

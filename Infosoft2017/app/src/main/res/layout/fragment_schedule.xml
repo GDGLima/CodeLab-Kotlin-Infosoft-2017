@@ -16,12 +16,13 @@
         app:cardElevation="10dp"
         android:layout_margin="10dp">
         <RelativeLayout
+            android:id="@+id/relativeLayoutActivity"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
             <android.support.v7.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
+                android:paddingLeft="40dp"
                 android:paddingRight="20dp"
                 android:paddingTop="80dp"
                 android:paddingBottom="80dp"
@@ -46,6 +47,7 @@
         app:cardElevation="10dp"
         android:layout_margin="10dp">
         <RelativeLayout
+            android:id="@+id/relativeLayoutWorkshop"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <android.support.v7.widget.AppCompatTextView
@@ -53,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:paddingLeft="20dp"
+                android:paddingLeft="40dp"
                 android:paddingRight="20dp"
                 android:paddingTop="80dp"
                 android:paddingBottom="80dp"

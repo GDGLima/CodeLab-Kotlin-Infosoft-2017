@@ -11,5 +11,5 @@
         android:id="@+id/recyclerViewSpeakers">
 
     </android.support.v7.widget.RecyclerView>
-
+    <include layout="@layout/layout_progress"/>
 </FrameLayout>

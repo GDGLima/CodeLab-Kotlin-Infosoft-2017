@@ -20,5 +20,7 @@ class EntityK {
 
     data class SponsorK(val title:String, val image:String,val type:ItemType):Serializable
 
-    data class EventK(val day:String,val time:String, val activity:String,val type:EventType):Serializable
+    data class EventK(val titulo:String,val horario_inicio:String,val horario_fin:String,
+                      val activity:String,val expositor_nombre:String,
+                      val fecha:String,val type:EventType):Serializable
 }

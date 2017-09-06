@@ -8,7 +8,7 @@ import retrofit2.Call
 /**
  * Created by emedinaa on 3/09/17.
  */
-open class BaseFragmentK<T>:Fragment() {
+open abstract class BaseFragmentK<T>:Fragment() {
 
     protected var currentCall:Call<T>?=null;
 
@@ -22,4 +22,7 @@ open class BaseFragmentK<T>:Fragment() {
         super.onDestroy()
         currentCall!!.cancel()
     }
+
+    abstract fun showLoading()
+    abstract fun hideLoading()
 }
