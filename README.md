@@ -179,6 +179,18 @@ Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para
 
 ## [5] Construye las vistas y la UI de tu App
 
+* findViewById 
+
+```
+      findViewById(R.id.imageViewJava).setOnClickListener(...);
+      findViewById(R.id.imageViewKotlin).setOnClickListener(...);
+```
+
+```
+      imageViewJava.setOnClickListener{ ... }
+```
+
+
 * Fragments en Java
 
 ```java
@@ -270,6 +282,45 @@ class SpeakersFragmentK : Fragment {
 
 
 ## [6] Agrega interactividad  a tu app mediante eventos
+
+```
+    private void  goToActivity(Class activity){
+        startActivity(new Intent(this,activity));
+    }
+
+    @Override
+    public void onClick(View view) {
+          switch (view.getId()){
+              case R.id.imageViewJava:
+                      goToActivity(JavaActivity.class);
+                  break;
+              case R.id.imageViewKotlin:
+                      goToActivity(KotlinActivity.class);
+                  break;
+          }
+    }
+    private void app() {
+        findViewById(R.id.imageViewJava).setOnClickListener(this);
+        findViewById(R.id.imageViewKotlin).setOnClickListener(this);
+    
+    }
+```
+
+
+```
+
+   private fun  showMessage(){
+        Toast.makeText(this,"Hello Kotlin",Toast.LENGTH_LONG).show()
+   }
+
+   private fun app() {
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        //textViewHello
+        imageViewJava.setOnClickListener{
+            showMessage();
+        }
+    }
+```
 
 ## [7] Maneja Listas y Adaptaders usando RecyclerView
 
