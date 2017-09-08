@@ -7,6 +7,8 @@ import kotlinx.android.synthetic.main.activity_java.*
 
 class KotlinActivity : AppCompatActivity() {
 
+    var userMessage:String ="Hola Kotlin"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kotlin)
@@ -14,7 +16,8 @@ class KotlinActivity : AppCompatActivity() {
     }
 
     private fun  showMessage(){
-        Toast.makeText(this,"Hello Kotlin",Toast.LENGTH_LONG).show()
+        //Toast.makeText(this,"Hello Kotlin",Toast.LENGTH_LONG).show()
+        Toast.makeText(this,userMessage,Toast.LENGTH_LONG).show()
     }
 
     private fun app() {
@@ -23,6 +26,7 @@ class KotlinActivity : AppCompatActivity() {
         imageViewJava.setOnClickListener{
             showMessage();
         }
+        userMessage= "Hola Kotlin Android "
     }
 
     override fun onSupportNavigateUp(): Boolean {
