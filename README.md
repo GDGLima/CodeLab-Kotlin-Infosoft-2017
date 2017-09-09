@@ -6,6 +6,8 @@
 
 Este codelab está enfocado al desarrollo de aplicaciones Android usando Kotlin. Iniciaremos con una introducción a este lenguaje , sus características, ventajas, interoperabilidad y diferencias con java. Luego, usaremos Android Studio para implementar  un ejemplo práctico de una aplicación Android desarrollada con Kotlin.
 
+Presentación [https://docs.google.com/presentation/d/1W94zuvQQxgYN7irp-TKRKScq_nnXrJ8Eje_BvpqQeXc/edit?usp=sharing](https://docs.google.com/presentation/d/1W94zuvQQxgYN7irp-TKRKScq_nnXrJ8Eje_BvpqQeXc/edit?usp=sharing)
+
 ## [1] Bienvenido
 
 Bienvenido al CodeLab de Kotlin , antes de empezar y para tener todo listo  para el CodeLab,  te recomiendo revisar lo siguiente :
@@ -483,3 +485,10 @@ Agenda - Actividades por fecha | POST | /events
 
   * Realm - Getting started with Kotlin and Anko on Android
   https://academy.realm.io/posts/getting-started-with-kotlin-and-anko/
+
+## [10] Ayuda a mejorar este CodeLab
+
+  * Si encuentras algún issue puedes reportarlo a este link [https://github.com/GDGLima/CodeLab-Kotlin-Infosoft-2017/issues](https://github.com/GDGLima/CodeLab-Kotlin-Infosoft-2017/issues)
+  * Si deseas colaborar puedes clonar este repo y luego enviar un pull request
+  
+  Happy coding ! 
