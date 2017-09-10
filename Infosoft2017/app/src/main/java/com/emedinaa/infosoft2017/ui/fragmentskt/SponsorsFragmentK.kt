@@ -109,7 +109,7 @@ class SponsorsFragmentK : BaseFragmentK<SponsorResponseK>() {
         }
 
         override fun onFailure(call: Call<SponsorResponseK>?, t: Throwable?) {
-            hideLoading()
+            if(!call!!.isCanceled)hideLoading()
             log({"onFailure $t"})
         }
     }
