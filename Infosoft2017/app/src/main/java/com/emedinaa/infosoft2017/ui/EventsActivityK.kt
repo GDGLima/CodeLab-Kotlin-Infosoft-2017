@@ -97,7 +97,7 @@ class EventsActivityK : BaseActivityK() {
         }
 
         override fun onFailure(call: Call<EventResponseK>?, t: Throwable?) {
-            hideLoading()
+            if(!call!!.isCanceled)hideLoading()
 
             log({"onFailure $t"})
         }

@@ -92,8 +92,7 @@ class SpeakersFragmentK : BaseFragmentK<SpeakerResponseK>() {
         }
 
         override fun onFailure(call: Call<SpeakerResponseK>?, t: Throwable?) {
-            hideLoading()
-
+            if(!call!!.isCanceled)hideLoading()
             log({"onFailure $t"})
         }
     }
